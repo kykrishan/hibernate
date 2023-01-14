@@ -1,6 +1,5 @@
-package dao;
+package com.alphas.dao;
 
-import entity.Student;
 
 import java.util.List;
 
@@ -10,9 +9,9 @@ public interface IDao<t>{
 
     void update(t a);
 
-    Student getById(long id);
+    t getById(long id);
 
-    List<Student> getAll();
+    List<t> getAll();
 
     void delete(long id);
 }

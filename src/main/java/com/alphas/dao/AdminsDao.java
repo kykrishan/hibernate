@@ -1,7 +1,8 @@
-package dao;
+package com.alphas.dao;
 
-import entity.Admins;
-import entity.Student;
+
+
+import com.alphas.entity.Admins;
 
 import java.util.List;
 
@@ -17,12 +18,12 @@ public class AdminsDao implements IDao<Admins> {
     }
 
     @Override
-    public Student getById(long id) {
+    public Admins getById(long id) {
         return null;
     }
 
     @Override
-    public List<Student> getAll() {
+    public List<Admins> getAll() {
         return null;
     }
 

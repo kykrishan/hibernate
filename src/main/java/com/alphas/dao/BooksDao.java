@@ -1,11 +1,7 @@
-package dao;
+package com.alphas.dao;
 
-import entity.Books;
-import entity.Student;
-import org.hibernate.Session;
-import util.HibernateUtil;
+import com.alphas.entity.Books;
 
-import javax.transaction.Transaction;
 import java.util.List;
 
 public class BooksDao implements IDao<Books> {
@@ -20,12 +16,12 @@ public class BooksDao implements IDao<Books> {
     }
 
     @Override
-    public Student getById(long id) {
+    public Books getById(long id) {
         return null;
     }
 
     @Override
-    public List<Student> getAll() {
+    public List<Books> getAll() {
         return null;
     }
 

@@ -1,6 +1,7 @@
-package dao;
+package com.alphas.dao;
 
-import entity.Student;
+
+import com.alphas.entity.Student;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import util.SessionFactoryProvider;
@@ -12,7 +13,8 @@ public class StudentDao implements IDao<Student> {
     @Override
     public void save(Student student) {
         Transaction transaction = null;
-            try (Session session = SessionFactoryProvider.provideSessionFactory().getCurrentSession()) {
+            try  {
+                Session session = SessionFactoryProvider.provideSessionFactory().getCurrentSession();
                 // start the transaction
                 transaction = session.beginTransaction();
 
